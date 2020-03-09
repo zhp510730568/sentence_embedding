@@ -11,7 +11,7 @@ import csv, json, random
 import tensorflow as tf
 
 sys.path.append('.')
-from src.model import modeling, tokenization, optimization
+from model import modeling, tokenization, optimization
 
 current_path=os.path.dirname(os.path.abspath(__file__))
 
