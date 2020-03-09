@@ -9,9 +9,10 @@ nohup python3 -u src/model/sentence_embedding.py --do_train=true --do_predict=tr
 
 
 # 数据格式
-query\tcond1\tcond2\tcond3\tlabel
+query\tcond1\tcond2\tlabel
 
 e.g:
 新华社发（埃德·赛克斯摄）8月12日，在英国曼彻斯特，警方在枪击现场检查。  图片质量不高，敬请谅解，感谢大家支持。  新华社发（埃德·赛克斯摄）       英国曼彻斯特莫斯赛德地区12日凌晨发生枪击事件，目前已造成10人受伤。  1
 
-
+# 说明
+query和cond使用单独网络，可以改为共享，比较费资源，土豪专属.
